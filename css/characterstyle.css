@@ -45,6 +45,14 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+h4{
+    display: flex;
+    justify-content: center;
+    color: darkcyan;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 .content-upper{
     display: flex;
     justify-content: space-evenly;
@@ -77,4 +85,21 @@ h3{
     margin-top: 5%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+.char-content{
+    display: flex;
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 7%
+}
+.char-content-left img{
+    width: 400px;
+}
+.char-content-right p{
+    width: 100%;
+    padding-left: 12%;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
