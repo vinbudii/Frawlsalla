@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: darkslateblue;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer{
+    background-color: darkslateblue;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+#logoimg{
+    display: flex;
+    justify-content: start;
+    width: 150px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+
+}
+
+.content-container{
+    padding-bottom: 5%;
+}
+
+.nav a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    color: darkcyan;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    color: darkcyan;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.content-upper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.content-middle{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.content-lower{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.content img{
+    width: 300px;
+    margin-top: 10%;
+}
+
+.name{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 22px;
+    margin: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.char{
+    display: flex;
+    justify-content: center;
+}
+
+.char-content{
+    display: flex;
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 7%
+}
+
+.char-content-left img{
+    width: 400px;
+}
+
+.char-content-right p{
+    width: 100%;
+    padding-left: 12%;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
