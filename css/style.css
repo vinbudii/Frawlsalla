@@ -15,7 +15,12 @@ body{
     text-align: center;
     color: white;
 }
-
+.sticky {
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+    z-index: 105;
+  }
 #logoimg{
     display: flex;
     justify-content: start;
