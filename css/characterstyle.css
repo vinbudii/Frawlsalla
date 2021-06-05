@@ -3,7 +3,10 @@ body{
 }
 .header{
     background-color: darkslateblue;
-    padding: 15px;
+    /* padding: 15px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,14 +20,14 @@ body{
 }
 .sticky {
     position: fixed;
-    top: 0;
+    /* top: 0; */
     width: 100%;
     z-index: 105;
   }
 #logoimg{
     display: flex;
     justify-content: start;
-    width: 150px;
+    width: 125px;
 }
 .nav{
     display: flex;
@@ -41,19 +44,58 @@ body{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+.nav a:hover{
+    color: orange;
+    transition: 0.3s ease;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkslateblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 10px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {
+    background-color: rgb(66, 66, 66);
+} */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropcharacter {
+    color: orange;
+    transition: 0.3s ease;
 }
 h3{
     display: flex;
     justify-content: center;
-    color: darkslateblue;
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
     margin: 0%;
-    padding-top: 5%;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-top: 1%;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 h4{
     display: flex;
@@ -62,18 +104,19 @@ h4{
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    margin: 0%;
 }
 .body{
     background-image: url(../assets/8230c9df141548676f86f4661506f90d.png);
 }
-.content-container{
+/* .content-container{
     
-}
+} */
 .content-upper{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 .content-middle{
     display: flex;
@@ -120,4 +163,15 @@ h4{
     padding-left: 12%;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
+}
+#kaya{
+    display: flex;
+    justify-content: center;
+    color: darkslateblue;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkcyan;
+    margin: 0%;
+    padding-top: 1%; 
 }
