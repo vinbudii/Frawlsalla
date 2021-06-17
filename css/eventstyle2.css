@@ -1,6 +1,7 @@
 body{
     margin: 0;
 }
+
 .header{
     background-color: darkslateblue;
     padding: 15px;
@@ -15,22 +16,23 @@ body{
     text-align: center;
     color: white;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 105;
-  }
+
 #logoimg{
     display: flex;
     justify-content: start;
     width: 150px;
 }
+
 .nav{
     display: flex;
     justify-content: center;
 
 }
+
+.content-container{
+    padding-bottom: 5%;
+}
+
 .nav a{
     display: flex;
     text-decoration: none;
@@ -41,46 +43,66 @@ body{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
 h3{
     display: flex;
     justify-content: center;
-    color: darkslateblue;
+    color: darkcyan;
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: white;
-    margin: 0%;
-    padding-top: 5%;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
 h4{
     display: flex;
     justify-content: center;
+    color: #50D2D7;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #EB5656;
+}
+
+li{
+    margin-left: 30px;
+    color: #000000;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    margin-left: 30px;
+    padding-left:50px;
+    color: #000000;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h6{
+    display: flex;
+    justify-content:center;
+    padding-right:10% ;
     color: darkcyan;
-    font-size: 28px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-.body{
-    background-image: url(../assets/8230c9df141548676f86f4661506f90d.png);
-}
-.content-container{
-    
-}
+
 .content-upper{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     padding-top: 5%;
 }
+
 .content-middle{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     padding-top: 5%;
 }
+
 .content-lower{
     display: flex;
     justify-content: space-evenly;
@@ -97,24 +119,35 @@ h4{
 .name{
     display: flex;
     justify-content: space-evenly;
-    font-size: 30px;
-    margin-top: 5%;
+    font-size: 22px;
+    margin: 5%;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.char{
+    display: flex;
+    justify-content: center;
 }
 
 .char-content{
     display: flex;
+    flex-direction: column;
     padding-top: 3%;
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 7%
 }
-.char-content-left img{
-    width: 400px;
+
+.char-content-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.char-content-left img{
+    width: 800px;
+}
+
 .char-content-right p{
     width: 100%;
     padding-left: 12%;
