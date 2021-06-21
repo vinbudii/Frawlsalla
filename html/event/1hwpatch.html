@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../css/eventstyle2.css">
+    <link rel="stylesheet" href="../../css/eventstyle.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script src="../../scripts/script.js"></script>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="logo" id="logo">
             <a href="index.html">
                 <img src="../../assets/Frawlsalla Logo.png" id="logoimg" alt="">
@@ -24,8 +29,19 @@
             <div class="events" id="events">
                 <a href="../events.html">EVENTS</a>
             </div>
-            <div class="characters" id="characters">
-                <a href="../characters.html">CHARACTERS</a>
+            <div class="dropdown">
+                <a class="dropcharacter" href="../characters.html">CHARACTERS</a>
+                <div class="dropdown-content" id="characters">
+                    <a href="../characters/Kaya.html">Kaya</a>
+                    <a href="../characters/Nix.html">Nix</a>
+                    <a href="../characters/Cross.html">Cross</a>
+                    <a href="../characters/Barraza.html">Barraza</a>
+                    <a href="../characters/Koji.html">Koji</a>
+                    <a href="../characters/Ragnir.html">Ragnir</a>
+                    <a href="../characters/Mirage.html">Mirage</a>
+                    <a href="../characters/Wushang.html">Wu shang</a>
+                    <a href="../characters/Petra.html">Petra</a>
+                </div>
             </div>
             <div class="playnow" id="playnow">
                 <a href="../playnow.html">PLAY NOW</a>
