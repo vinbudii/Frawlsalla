@@ -1,53 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <div class="header">
-        <div class="logo" id="logo">
-            <a href="index.html">
-                <img src="../assets/Frawlsalla Logo.png" id="logoimg" alt="">
-            </a>
-        </div>
-        <div class="nav">
-            <div class="home" id="home">
-                <a href="index.html">HOME</a>
-            </div>
-            <div class="screenshots" id="screenshots">
-                <a href="screenshots.html">SCREENSHOTS</a>
-            </div>
-            <div class="events" id="events">
-                <a href="events.html">EVENTS</a>
-            </div>
-            <div class="dropdown">
-                <a class="dropcharacter" href="characters.html">CHARACTERS</a>
-                <div class="dropdown-content" id="characters">
-                    <a href="../html/characters/Kaya.html">Kaya</a>
-                    <a href="../html/characters/Nix.html">Nix</a>
-                    <a href="../html/characters/Cross.html">Cross</a>
-                    <a href="../html/characters/Barraza.html">Barraza</a>
-                    <a href="../html/characters/Koji.html">Koji</a>
-                    <a href="../html/characters/Ragnir.html">Ragnir</a>
-                    <a href="../html/characters/Mirage.html">Mirage</a>
-                    <a href="../html/characters/Wushang.html">Wu shang</a>
-                    <a href="../html/characters/Petra.html">Petra</a>
-                </div>
-            </div>
-            <div class="playnow" id="playnow">
-                <a href="playnow.html">PLAY NOW</a>
-            </div>
-        </div>
-    </div>
-    <h3>PLAY NOW</h3>
+body{
+    margin: 0;
+}
+.header{
+    background-color: darkslateblue;
+    /* padding: 15px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    <div class="footer">
-        <h2>CONTACT</h2>
-        <h2>© 2021 All Rights Reserved.</h2>
-    </div>
-</body>
-</html>
+.footer{
+    background-color: darkslateblue;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.sticky {
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+    z-index: 105;
+  }
+#logoimg{
+    display: flex;
+    justify-content: start;
+    width: 125px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+
+}
+.nav a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+.nav a:hover{
+    color: orange;
+    transition: 0.3s ease;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkslateblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 10px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {
+    background-color: rgb(66, 66, 66);
+} */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropcharacter {
+    color: orange;
+    transition: 0.3s ease;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkcyan;
+    margin: 0%;
+    padding-top: 1%;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+h4{
+    display: flex;
+    justify-content: center;
+    color: darkcyan;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0%;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    
+  }
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+
+.form{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.registerbtn {
+    background-color: darkcyan;
+    color: white;
+    padding: 16px 20px;
+    margin-top: 2%;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .registerbtn:hover {
+    opacity: 1;
+  }
