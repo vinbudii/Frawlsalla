@@ -48,33 +48,48 @@ $(document).ready(function(){
   });
 
   $('.dot1').on('click', function(){
-    var currentImg = $('.active');
-    var currentDot = $('.active');
-    // currentImg.removeClass('active').css('z-index', -10);
-    firstImg.addClass('active').css('z-index', 10);
-    currentDot.removeClass('active').css('z-index', -10);
-    firstDot.addClass('active').css('z-index', 10);
-    console.log('first dot clicked');
+    if($('#dot1').hasClass('active')){
+      console.log('first dot already active');
+    }
+    else{
+      var currentImg = $('.active');
+      var currentDot = $('.active');
+      // currentImg.removeClass('active').css('z-index', -10);
+      firstImg.addClass('active').css('z-index', 10);
+      currentDot.removeClass('active').css('z-index', -10);
+      firstDot.addClass('active').css('z-index', 10);
+      console.log('first dot clicked');
+    }
   });
 
   $('.dot2').on('click', function(){
-    var currentImg = $('.active');
-    var currentDot = $('.active');
-    currentImg.removeClass('active').css('z-index', -10);
-    secondImg.addClass('active').css('z-index', 10);
-    currentDot.removeClass('active').css('z-index', -10);
-    secondDot.addClass('active').css('z-index', 10);
-    console.log('second dot clicked');
+    if($('#dot2').hasClass('active')){
+      console.log('second dot already active');
+    }
+    else{
+      var currentImg = $('.active');
+      var currentDot = $('.active');
+      currentImg.removeClass('active').css('z-index', -10);
+      secondImg.addClass('active').css('z-index', 10);
+      currentDot.removeClass('active').css('z-index', -10);
+      secondDot.addClass('active').css('z-index', 10);
+      console.log('second dot clicked');
+    }
   });
 
   $('.dot3').on('click', function(){
-    var currentImg = $('.active');
-    var currentDot = $('.active');
-    currentImg.removeClass('active').css('z-index', -10);
-    lastImg.addClass('active').css('z-index', 10);
-    currentDot.removeClass('active').css('z-index', -10);
-    thirdDot.addClass('active').css('z-index', 10);
-    console.log('third dot clicked');
+    if($('#dot3').hasClass('active')){
+      console.log('third dot already active');
+    }
+    else{
+      var currentImg = $('.active');
+      var currentDot = $('.active');
+      currentImg.removeClass('active').css('z-index', -10);
+      lastImg.addClass('active').css('z-index', 10);
+      currentDot.removeClass('active').css('z-index', -10);
+      thirdDot.addClass('active').css('z-index', 10);
+      console.log('third dot clicked');
+    }
   });
 
   window.onscroll = function() {stickyHeader()};
