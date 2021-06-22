@@ -20,7 +20,7 @@ body{
 }
 .sticky {
     position: fixed;
-    /* top: 0; */
+    top: 0;
     width: 100%;
     z-index: 105;
   }
@@ -334,21 +334,21 @@ hr{
     .nav a, .dropdown .dropcharacter {
       display: none;
     }
+    
     .burgernav{
         display: block;
-        overflow: visible;
         position: fixed; right: 8%; top: 1%;
         font-size: 30px;
-        z-index: 200;
+        z-index: 201;
     }
-    .burgernav.active .burgernav-content{
+    .burgernav.Active .burgernav-content{
         display: block;
         animation: drop 0.3s;
     }
-    .burgernav .burgernav-content{
+    /* .burgernav .burgernav-content{
         animation: slideup 0.3s;
-    }
-    #burgericon.active{
+    } */
+    #burgericon.Active{
         animation: rotate 0.3s ;
         animation-fill-mode: forwards;
     }

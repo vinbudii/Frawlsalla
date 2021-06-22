@@ -46,8 +46,8 @@ var burgerdropdown = document.getElementById("burgernav-content")
 respicon.addEventListener("click", function() {
   var x = document.getElementById("burgernav");
   if (x.className == "burgernav") {
-    x.className += " active";
-    burgericon.className = "active"
+    x.className += " Active";
+    burgericon.className = "Active"
 
   } else {
     x.className = "burgernav";
