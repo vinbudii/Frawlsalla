@@ -5,14 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/playnow.css">
+    <script src="../scripts/script1.js" defer></script>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <div class="logo" id="logo">
             <a href="index.html">
                 <img src="../assets/Frawlsalla Logo.png" id="logoimg" alt="">
             </a>
+        </div>
+        <div class="burgernav" id="burgernav">
+            <a href="javascript:void(0);" class="burger" id="burger">
+            <img src="../assets/burger.png" id="burgericon" alt="">
+            </a>
+            <div class="burgernav-content" id="burgernav-content">
+                    <a href="index.html">HOME</a>
+                    <a href="screenshots.html">SCREENSHOTS</a>
+                    <a href="events.html">EVENTS</a>
+                    <a class="character" href="characters.html">CHARACTERS</a>
+                    <a href="playnow.html">PLAY NOW</a>
+            </div>
         </div>
         <div class="nav">
             <div class="home" id="home">
@@ -24,14 +37,60 @@
             <div class="events" id="events">
                 <a href="events.html">EVENTS</a>
             </div>
-            <div class="characters" id="characters">
-                <a href="characters.html">CHARACTERS</a>
+            <div class="dropdown">
+                <a class="dropcharacter" href="characters.html">CHARACTERS</a>
+                <div class="dropdown-content" id="characters">
+                    <a href="../html/characters/Kaya.html">Kaya</a>
+                    <a href="../html/characters/Nix.html">Nix</a>
+                    <a href="../html/characters/Cross.html">Cross</a>
+                    <a href="../html/characters/Barraza.html">Barraza</a>
+                    <a href="../html/characters/Koji.html">Koji</a>
+                    <a href="../html/characters/Ragnir.html">Ragnir</a>
+                    <a href="../html/characters/Mirage.html">Mirage</a>
+                    <a href="../html/characters/Wushang.html">Wu shang</a>
+                    <a href="../html/characters/Petra.html">Petra</a>
+                </div>
             </div>
             <div class="playnow" id="playnow">
                 <a href="playnow.html">PLAY NOW</a>
             </div>
         </div>
     </div>
-    <h3>PLAY NOW</h3>
+    <div class="Form" style="width: 50%; margin-left: 25%;">
+        <form action="" id="RegistrationForm">
+            <h3>Register</h3>
+            <h4>Please Fill the Form Below</h4>
+            <label for="name"><b>Username</b></label>
+            <input type="text" placeholder="Enter Name" name="name" id="name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            <label for="gender"><b>Gender</b></label>
+            <br>
+            <input type="radio" name="gender" value="male" id="male"> 
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" value="female" id="female"> 
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <br>
+            <input type="checkbox" name="terms" value="true" id="terms" > 
+            <label for="terms">I agree to the terms and conditions </label>
+            <br>
+            <br>
+            <tr>
+                <td colspan="2">
+                    <p id="errorMessage"></p>
+                </td>
+            </tr>
+            <button type="submit" class="registerbtn">Register</button>
+        </form>
+    </div>
+    <div class="footer">
+        <h2>CONTACT</h2>
+        <h2>© 2021 All Rights Reserved.</h2>
+    </div>
 </body>
 </html>

@@ -20,7 +20,7 @@ body{
 }
 .sticky {
     position: fixed;
-    /* top: 0; */
+    top: 0;
     width: 100%;
     z-index: 105;
   }
@@ -145,4 +145,79 @@ hr{
     padding-left: 15%;
     padding-top: 2%;
     padding-bottom: 3%;
+}
+#burgericon{
+    width: 35px;
+}
+.burgernav {
+    display: none;
+    color: white;
+}
+.burgernav a{
+    color: white;
+    text-decoration: none;
+}
+.burgernav-content {
+    display: none;
+    text-decoration: none;
+    color: white;
+    position: fixed; right: 0%;
+    background-color: darkslateblue;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    padding-top: 10px;
+    z-index: 1;
+}
+.burgernav-content a{
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+@keyframes drop{
+    from {top: 0px;}
+    to {top: 55px;}
+}
+@keyframes slideup{
+    from {top: 55px;}
+    to {top: 0px;}
+}
+@keyframes rotate{
+    to {transform: rotate(90deg);}
+}
+@keyframes backrotate{
+    from{transform: rotate(90deg);}
+    to {transform: rotate(0deg);}
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        width: 100%;
+    }
+    .nav a, .dropdown .dropcharacter {
+      display: none;
+    }
+    .burgernav{
+        display: block;
+        position: fixed; right: 8%; top: 1%;
+        font-size: 30px;
+    }
+    .burgernav.Active .burgernav-content{
+        display: block;
+        animation: drop 0.3s;
+    }
+    .burgernav .burgernav-content{
+        animation: slideup 0.3s;
+    }
+    #burgericon.Active{
+        animation: rotate 0.3s ;
+        animation-fill-mode: forwards;
+    }
+    #burgericon.back{
+        animation: backrotate 0.3s;
+        animation-fill-mode: backwards;
+    }
 }

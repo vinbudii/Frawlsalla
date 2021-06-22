@@ -107,162 +107,44 @@ h4{
     margin: 0%;
 }
 
-/* .content-container{
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
     
-} */
-.content-upper{
+  }
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+
+.form{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 50%;
+}
+.registerbtn {
+    background-color: darkcyan;
+    color: white;
+    padding: 16px 20px;
+    margin-top: 2%;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
     width: 100%;
-    padding-top: 2%;
-}
-.content-middle{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-top: 5%;
-}
-.content-lower{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
+    opacity: 0.9;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .registerbtn:hover {
+    opacity: 1;
+  }
 
-.content img{
-    width: 300px;
-    margin-top: 10%;
-}
-
-.name{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 30px;
-    margin-top: 5%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;;
-}
-
-.char-content{
-    display: flex;
-    padding-top: 3%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 7%
-}
-.char-content-left img{
-    width: 400px;
-}
-.char-content-right p{
-    width: 100%;
-    padding-left: 12%;
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#kaya{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-
-#barraza{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-#cross{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-#koji{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-#mirage{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-#nix{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-#petra{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-#ragnir{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-#wushang{
-    display: flex;
-    justify-content: center;
-    color: darkslateblue;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: darkcyan;
-    margin: 0%;
-    padding-top: 1%; 
-}
-
-#burgericon{
+  #burgericon{
     width: 35px;
 }
 .burgernav {
@@ -309,7 +191,7 @@ h4{
     to {transform: rotate(0deg);}
 }
 
-@media screen and (max-width: 800px){
+  @media screen and (max-width: 800px){
     .header{
         width: 100%;
     }
@@ -335,33 +217,5 @@ h4{
     #burgericon.back{
         animation: backrotate 0.3s;
         animation-fill-mode: backwards;
-    }
-    .content-upper{
-        flex-direction: column;
-        align-items: center;
-    }
-    .content-middle{
-        flex-direction: column;
-        align-items: center;
-    }
-    .content-lower{
-        flex-direction: column;
-        align-items: center;
-    }
-    .char-content{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-    }
-    .char-content-left{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .char-content-right p{
-        flex-direction: column;
-        justify-content: center;
-        padding: 0%;
-        text-align: center;
     }
 }
