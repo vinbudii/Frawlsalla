@@ -38,3 +38,19 @@ function handleSubmit(e){
 
 //CALLBACK FUNCTION
 form.addEventListener('submit', handleSubmit)
+
+//burger navbar
+var respicon = document.getElementById("burger")
+var burgericon = document.getElementById("burgericon")
+var burgerdropdown = document.getElementById("burgernav-content")
+respicon.addEventListener("click", function() {
+  var x = document.getElementById("burgernav");
+  if (x.className == "burgernav") {
+    x.className += " active";
+    burgericon.className = "active"
+
+  } else {
+    x.className = "burgernav";
+    burgericon.className = "back";
+  }
+});
